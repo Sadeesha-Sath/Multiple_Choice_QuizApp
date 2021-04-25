@@ -27,21 +27,16 @@ class StartPageBody extends StatelessWidget {
           children: [
             Text(
               "Quizzly",
-              style: TextStyle(fontSize: 40, fontFamily: kQuando),
+              style: TextStyle(fontSize: 41, fontFamily: kQuando),
               textAlign: TextAlign.center,
             ),
-            // Text(
-            //   "The only Quiz Game you will ever need",
-            //   textAlign: TextAlign.center,
-            //   style: TextStyle(fontFamily: kSatisfy, fontSize: 20),
-            // ),
             SizedBox(
               height: 60,
             ),
             Text(
               "Choose a quiz format to play".toUpperCase(),
-              textAlign: TextAlign.left,
-              style: TextStyle(fontFamily: kQuando, fontSize: 17),
+              textAlign: TextAlign.center,
+              style: TextStyle(fontFamily: kQuando, fontSize: 17.5),
             ),
             SizedBox(
               height: 22,

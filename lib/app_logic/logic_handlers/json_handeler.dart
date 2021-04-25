@@ -13,16 +13,10 @@ class JsonHandeler {
     String jsonString = await _loadFromAsset();
     final jsonResponse = jsonDecode(jsonString);
     for (Map<String, dynamic> item in jsonResponse['trivia_categories']) {
-      // _apiCategoryList.add(item['name'].toString());
-      // _apiIDList.add(item['id']);
       _apiMap[item['id']] = item['name'];
     }
     return _apiMap;
-    // print(apiCategoryList);
-    // print(apiIDList);
   }
 
-  // List<String> get getcategories => _apiCategoryList;
-  // List<int> get getIds => _apiIDList;
   Map<int, String> get getMap => _apiMap;
 }

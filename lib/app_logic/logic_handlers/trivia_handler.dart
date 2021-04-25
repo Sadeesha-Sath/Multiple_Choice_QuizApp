@@ -15,7 +15,7 @@ class OpenTriviaHandler {
       required this.questionNumber});
 
   Future getQuestionData() async {
-    // print([category, difficulty, questionNumber]);
+    // If category is "Any" => category == -1
     if (category == -1) {
       apiURL =
           "https://opentdb.com/api.php?amount=$questionNumber&difficulty=$difficulty&type=multiple";
@@ -36,6 +36,7 @@ class OpenTriviaHandler {
           unescaper.convert(answer.toString()),
         );
       }
+      // randomize the answers
       allAnswers.shuffle();
       questionList.add(
         Question(

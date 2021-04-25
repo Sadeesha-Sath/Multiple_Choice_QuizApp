@@ -13,7 +13,7 @@ class CategoryButton extends StatelessWidget {
     required this.child,
     required this.icon,
     required this.questions,
-    this.difficulty = 'easy',
+    required this.difficulty,
     required this.categoryID,
   });
 

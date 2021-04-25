@@ -54,7 +54,13 @@ class _QuizPageState extends State<QuizPage> {
                 widget.topic,
               ],
             );
-            // TODO Add Some error handling
+          } else if (snapshot.hasError) {
+            print("error");
+            return Scaffold(
+              body: Center(
+                child: Text("An Error has occured. Please try again later."),
+              ),
+            );
           } else {
             return Scaffold(
               body: Center(

@@ -72,7 +72,6 @@ class _CustomizeQuizPageContentsState extends State<CustomizeQuizPageContents> {
           onChanged: (int? value) {
             setState(() {
               _category = value;
-              // state.didChange(newValue);
             });
           },
           getLabel: (int value) {
@@ -100,7 +99,6 @@ class _CustomizeQuizPageContentsState extends State<CustomizeQuizPageContents> {
           onChanged: (int? value) {
             setState(() {
               _questions = value;
-              // state.didChange(newValue);
             });
           },
           getLabel: (int value) => value.toString(),
