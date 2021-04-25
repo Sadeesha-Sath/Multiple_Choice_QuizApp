@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:training_app_2/ui/ui_constants.dart';
 
 class AnswerButton extends StatelessWidget {
   final Widget? child;
@@ -42,7 +43,7 @@ class AnswerButton extends StatelessWidget {
             Text(
               text ?? "Sample",
               textAlign: TextAlign.center,
-              style: textStyle ?? TextStyle(fontSize: 16),
+              style: textStyle ?? TextStyle(fontSize: 16, fontFamily: kAlike),
             ),
       ),
     );

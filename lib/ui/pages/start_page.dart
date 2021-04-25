@@ -20,36 +20,70 @@ class StartPageBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.all(30),
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 25),
         child: Column(
           // mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              "My Quiz App",
-              style: TextStyle(fontSize: 40),
+              "Quizzly",
+              style: TextStyle(fontSize: 40, fontFamily: kQuando),
               textAlign: TextAlign.center,
             ),
             SizedBox(
-              height: 30,
+              height: 18,
             ),
             Text(
-              "Catch Phrase",
+              "The only Quiz Game you will ever need",
               textAlign: TextAlign.center,
+              style: TextStyle(fontFamily: kSatisfy, fontSize: 20),
             ),
             SizedBox(
-              height: 30,
+              height: 50,
             ),
             Text(
-              "Choose a category to compete".toUpperCase(),
+              "Choose a quiz format to play".toUpperCase(),
               textAlign: TextAlign.left,
+              style: TextStyle(fontFamily: kQuando, fontSize: 17),
             ),
             SizedBox(
-              height: 30,
+              height: 20,
             ),
-            CategoryButton(),
-            CategoryButton(),
-            CategoryButton(),
+            CategoryButton(
+              icon: Icons.computer,
+              child: "Science: Computers",
+              difficulty: kEasy,
+              categoryID: 18,
+              questions: 10,
+            ),
+            CategoryButton(
+              icon: Icons.movie_filter,
+              child: "Entertainment: Film",
+              difficulty: kEasy,
+              categoryID: 11,
+              questions: 20,
+            ),
+            CategoryButton(
+              icon: Icons.car_rental,
+              child: "Vehicles",
+              difficulty: kMedium,
+              categoryID: 28,
+              questions: 10,
+            ),
+            CategoryButton(
+              child: "General Knowledge",
+              icon: Icons.bookmark,
+              difficulty: kMedium,
+              categoryID: 9,
+              questions: 20,
+            ),
+            CategoryButton(
+              icon: Icons.history_edu,
+              child: "History",
+              difficulty: kHard,
+              categoryID: 23,
+              questions: 30,
+            ),
             Spacer(),
             TextButton(
               onPressed: () {
@@ -62,7 +96,7 @@ class StartPageBody extends StatelessWidget {
               },
               child: Text(
                 "Make Your Own Quiz Format",
-                style: TextStyle(fontSize: 16),
+                style: TextStyle(fontSize: 15, fontFamily: kQuando),
               ),
             ),
           ],

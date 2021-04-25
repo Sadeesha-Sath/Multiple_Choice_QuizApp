@@ -3,8 +3,6 @@ import 'package:flutter/services.dart' show rootBundle;
 
 class JsonHandeler {
   final String filePath = "assets/categories.json";
-  // List<int> _apiIDList = [-1];
-  // List<String> _apiCategoryList = ["Any"];
   Map<int, String> _apiMap = {-1: "Any"};
 
   Future<String> _loadFromAsset() async {

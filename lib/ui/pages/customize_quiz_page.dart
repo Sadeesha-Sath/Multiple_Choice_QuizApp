@@ -122,6 +122,7 @@ class _CustomizeQuizPageContentsState extends State<CustomizeQuizPageContents> {
                     category: _category!,
                     difficulty: _difficulty!,
                     questionNumber: _questions!,
+                    topic: widget.apiMap[_category],
                   );
                 },
               ),

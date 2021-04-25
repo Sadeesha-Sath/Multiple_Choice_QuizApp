@@ -10,11 +10,13 @@ class QuizPage extends StatefulWidget {
   final int category;
   final String difficulty;
   final int questionNumber;
+  final String topic;
 
   QuizPage(
       {required this.category,
       required this.difficulty,
-      required this.questionNumber});
+      required this.questionNumber,
+      required this.topic});
 
   static const String id = "quiz";
   late final questions;
@@ -43,7 +45,15 @@ class _QuizPageState extends State<QuizPage> {
         future: _future,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
-            return QuizContents(questionList: snapshot.data, previousConfig: [widget.category, widget.difficulty, widget.questionNumber],);
+            return QuizContents(
+              questionList: snapshot.data,
+              previousConfig: [
+                widget.category,
+                widget.difficulty,
+                widget.questionNumber,
+                widget.topic,
+              ],
+            );
             // TODO Add Some error handling
           } else {
             return Scaffold(
@@ -114,7 +124,7 @@ class _QuizContentsState extends State<QuizContents> {
   }
 
   void startTimer() {
-    _timer = Timer.periodic(Duration(milliseconds: 10), (timer) {
+    _timer = Timer.periodic(Duration(milliseconds: 12), (timer) {
       if (_progress <= 0.00001) {
         nextQuestion();
       }
@@ -157,9 +167,11 @@ class _QuizContentsState extends State<QuizContents> {
             value: _progress,
           ),
         ),
-        title: Row(
-          children: [Text("Topic"), Spacer(), Text("Score: $_score/10")],
-        ),
+        title: Text(widget.previousConfig[3],
+            style: TextStyle(
+              fontFamily: kQuando,
+            )),
+        centerTitle: true,
       ),
       body: SafeArea(
           child: Padding(
@@ -173,7 +185,7 @@ class _QuizContentsState extends State<QuizContents> {
                 child: Text(
                   activeQuestion.questionText,
                   textAlign: TextAlign.left,
-                  style: TextStyle(fontSize: 22),
+                  style: TextStyle(fontSize: 22, fontFamily: kAlike),
                 ),
               ),
             ),
