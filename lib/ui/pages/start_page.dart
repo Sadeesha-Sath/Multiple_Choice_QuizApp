@@ -30,16 +30,13 @@ class StartPageBody extends StatelessWidget {
               style: TextStyle(fontSize: 40, fontFamily: kQuando),
               textAlign: TextAlign.center,
             ),
+            // Text(
+            //   "The only Quiz Game you will ever need",
+            //   textAlign: TextAlign.center,
+            //   style: TextStyle(fontFamily: kSatisfy, fontSize: 20),
+            // ),
             SizedBox(
-              height: 18,
-            ),
-            Text(
-              "The only Quiz Game you will ever need",
-              textAlign: TextAlign.center,
-              style: TextStyle(fontFamily: kSatisfy, fontSize: 20),
-            ),
-            SizedBox(
-              height: 50,
+              height: 60,
             ),
             Text(
               "Choose a quiz format to play".toUpperCase(),
@@ -47,7 +44,7 @@ class StartPageBody extends StatelessWidget {
               style: TextStyle(fontFamily: kQuando, fontSize: 17),
             ),
             SizedBox(
-              height: 20,
+              height: 22,
             ),
             CategoryButton(
               icon: Icons.computer,
