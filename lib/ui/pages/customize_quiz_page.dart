@@ -27,8 +27,8 @@ class _CustomizeQuizPageState extends State<CustomizeQuizPage> {
         title: Text("Customize Quiz"),
       ),
       body: Padding(
-        padding:
-            const EdgeInsets.only(top: 40, bottom: 30, left: 30, right: 30),
+        padding: const EdgeInsets.only(
+            top: 40, bottom: 30, left: 16.45, right: 16.45),
         child: FutureBuilder(
           future: _future,
           builder: (context, snapshot) {
