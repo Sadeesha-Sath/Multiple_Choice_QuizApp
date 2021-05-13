@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:training_app_2/app_logic/logic_handlers/json_handeler.dart';
-import 'package:training_app_2/ui/pages/quiz_page.dart';
-import 'package:training_app_2/ui/utils/answer_button.dart';
-import 'package:training_app_2/ui/utils/dropdown_online.dart';
-import 'package:training_app_2/app_logic/extensions/string_cases.dart';
+import 'package:quizzly/app_logic/logic_handlers/json_handeler.dart';
+import 'package:quizzly/ui/pages/quiz_page.dart';
+import 'package:quizzly/ui/utils/answer_button.dart';
+import 'package:quizzly/ui/utils/dropdown_online.dart';
+import 'package:quizzly/app_logic/extensions/string_cases.dart';
 
 class CustomizeQuizPage extends StatefulWidget {
   @override

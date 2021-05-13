@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:training_app_2/ui/ui_constants.dart';
-import 'package:training_app_2/ui/pages/quiz_page.dart';
+import 'package:quizzly/ui/ui_constants.dart';
+import 'package:quizzly/ui/pages/quiz_page.dart';
 
 class CategoryButton extends StatelessWidget {
   final String child;

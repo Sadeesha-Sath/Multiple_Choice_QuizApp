@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:training_app_2/app_logic/models/question.dart';
-import 'package:training_app_2/ui/pages/end_page.dart';
-import 'package:training_app_2/ui/ui_constants.dart';
-import 'package:training_app_2/app_logic/logic_handlers/trivia_handler.dart';
-import 'package:training_app_2/ui/utils/answer_button.dart';
+import 'package:quizzly/app_logic/models/question.dart';
+import 'package:quizzly/ui/pages/end_page.dart';
+import 'package:quizzly/ui/ui_constants.dart';
+import 'package:quizzly/app_logic/logic_handlers/trivia_handler.dart';
+import 'package:quizzly/ui/utils/answer_button.dart';
 
 class QuizPage extends StatefulWidget {
   final int category;

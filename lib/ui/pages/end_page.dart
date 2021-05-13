@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:training_app_2/ui/pages/quiz_page.dart';
-import 'package:training_app_2/ui/pages/start_page.dart';
-import 'package:training_app_2/ui/ui_constants.dart';
-import 'package:training_app_2/ui/utils/answer_button.dart';
+import 'package:quizzly/ui/pages/quiz_page.dart';
+import 'package:quizzly/ui/pages/start_page.dart';
+import 'package:quizzly/ui/ui_constants.dart';
+import 'package:quizzly/ui/utils/answer_button.dart';
 
 class EndPage extends StatelessWidget {
   static const String id = "end";

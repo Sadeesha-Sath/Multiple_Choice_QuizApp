@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:training_app_2/ui/pages/start_page.dart';
+import 'package:quizzly/ui/pages/start_page.dart';
 
 void main() {
   runApp(MyApp());

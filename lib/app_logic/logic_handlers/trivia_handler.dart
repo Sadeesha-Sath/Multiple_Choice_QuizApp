@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
-import 'package:training_app_2/app_logic/logic_handlers/network_helper.dart';
-import 'package:training_app_2/app_logic/models/question.dart';
+import 'package:quizzly/app_logic/logic_handlers/network_helper.dart';
+import 'package:quizzly/app_logic/models/question.dart';
 import 'package:html_unescape/html_unescape_small.dart';
 
 class OpenTriviaHandler {

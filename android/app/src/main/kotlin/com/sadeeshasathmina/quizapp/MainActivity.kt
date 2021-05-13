@@ -1,4 +1,4 @@
-package com.sadeeshasathmina.quiz_app
+package com.sadeeshasathmina.quizapp
 
 import io.flutter.embedding.android.FlutterActivity
 

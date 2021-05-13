@@ -1,8 +1,8 @@
-import 'package:training_app_2/ui/pages/customize_quiz_page.dart';
-import 'package:training_app_2/ui/utils/category_button.dart';
+import 'package:quizzly/ui/pages/customize_quiz_page.dart';
+import 'package:quizzly/ui/utils/category_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:training_app_2/ui/ui_constants.dart';
+import 'package:quizzly/ui/ui_constants.dart';
 
 class StartPage extends StatelessWidget {
   static const String id = "start";
